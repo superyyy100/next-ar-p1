@@ -1,0 +1,1 @@
+const secretKey = process.env.local.SESSION_SECRET
