@@ -1,18 +1,20 @@
 
 import { createClient } from '@/lib/supabase/server'
 import { LogoutButton } from './logout-button'
+import Link from 'next/link'
+import { Button } from './ui/button'
 
 const LoggedIn = async () => {
     const supabase = await createClient()
     const { data, error } = await supabase.auth.getUser()
 
     if (error) {
-        return <div>Error: {error.message}</div>
+        return null
     }
 
     return (
         <>
-            <LogoutButton/>
+            <LogoutButton />
         </>
     )
 }
