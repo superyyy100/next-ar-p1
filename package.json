@@ -1,7 +1,8 @@
 {
   "name": "next-ar-p1",
   "version": "0.1.0",
-  "private": true,
+  "description": "Next.js app with Supabase authentication template",
+  "private": false,
   "scripts": {
     "dev": "next dev --turbopack",
     "build": "next build",
